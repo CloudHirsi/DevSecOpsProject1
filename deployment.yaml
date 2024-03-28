@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: youtube-clone
+  template:
+    metadata:
+      labels:
+        app: youtube-clone
+    spec:
+      containers:
+      - name: my-app-container
+        image: hamidhirsi/devsecops_project:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 3000
+        env:
+        - name: env
+          value: labs
