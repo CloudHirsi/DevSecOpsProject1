@@ -161,6 +161,8 @@ resource "azurerm_kubernetes_cluster" "ProjectAKS" {
     vm_size    = "Standard_B2s"
   }
 
+dns_prefix = "ProjectAKS"
+
   service_principal {
     client_id     = var.service_principal_client_id
     client_secret = var.service_principal_client_secret
