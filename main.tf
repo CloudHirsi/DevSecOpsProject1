@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "DevSecOpsProject" {
   name     = "DevSecOpsProject"
-  location = "East US"
+  location = "Central US"
 }
 
 resource "azurerm_virtual_network" "ProjectVNET" {
@@ -150,32 +150,8 @@ resource "azurerm_network_security_group" "JenkinsNSG" {
   }
 }
 
-resource "azurerm_kubernetes_cluster" "ProjectAKS" {
-  name                = "ProjectAKS"
-  location            = azurerm_resource_group.DevSecOpsProject.location
-  resource_group_name = azurerm_resource_group.DevSecOpsProject.name
-
-  default_node_pool {
-    name       = "default"
-    node_count = 2
-    vm_size    = "Standard_B2s"
-  }
-
-dns_prefix = "ProjectAKS"
-
-  service_principal {
-    client_id     = var.service_principal_client_id
-    client_secret = var.service_principal_client_secret
-  }
-
-  tags = {
-    Environment = "Project"
-  }
-}
-
-# Define Azure Container Registry (ACR)
-resource "azurerm_container_registry" "ProjectACR" {
-  name                     = "ProjectACR"
+resource "azurerm_container_registry" "ProjectACR678" {
+  name                     = "ProjectACR678"
   resource_group_name      = azurerm_resource_group.DevSecOpsProject.name
   location                 = azurerm_resource_group.DevSecOpsProject.location
   sku                      = "Standard"
