@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "DevSecOpsProject" {
   name     = "DevSecOpsProject"
-  location = "West Europe"
+  location = "East US"
 }
 
 resource "azurerm_virtual_network" "ProjectVNET" {
@@ -24,7 +24,7 @@ resource "azurerm_public_ip" "JenkinsIP" {
   allocation_method   = "Dynamic"
 
   tags = {
-    environment = "Production"
+    environment = "Project"
   }
 }
 
@@ -45,7 +45,7 @@ resource "azurerm_linux_virtual_machine" "JenkinsVM" {
   name                = "JenkinsVM"
   resource_group_name = azurerm_resource_group.DevSecOpsProject.name
   location            = azurerm_resource_group.DevSecOpsProject.location
-  size                = "Standard_F2"
+  size                = "Standard_DS3_v2"
   admin_username      = "adminuser"
   custom_data = var.startup_script
   network_interface_ids = [azurerm_network_interface.JenkinsNIC.id]
@@ -149,3 +149,34 @@ resource "azurerm_network_security_group" "JenkinsNSG" {
     environment = "Project"
   }
 }
+
+resource "azurerm_kubernetes_cluster" "ProjectAKS" {
+  name                = "ProjectAKS"
+  location            = azurerm_resource_group.DevSecOpsProject.location
+  resource_group_name = azurerm_resource_group.DevSecOpsProject.name
+
+  default_node_pool {
+    name       = "default"
+    node_count = 2
+    vm_size    = "Standard_B2s"
+  }
+
+  service_principal {
+    client_id     = var.service_principal_client_id
+    client_secret = var.service_principal_client_secret
+  }
+
+  tags = {
+    Environment = "Project"
+  }
+}
+
+# Define Azure Container Registry (ACR)
+resource "azurerm_container_registry" "ProjectACR" {
+  name                     = "ProjectACR"
+  resource_group_name      = azurerm_resource_group.DevSecOpsProject.name
+  location                 = azurerm_resource_group.DevSecOpsProject.location
+  sku                      = "Standard"
+  admin_enabled            = true
+}
+
