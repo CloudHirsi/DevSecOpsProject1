@@ -1,4 +1,7 @@
 # End To End DevSecOps Project!
+![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/2c5b5e51-6a60-48ca-bd4b-353242ef15fd)
+
+
 TOOLS:
 - Terraform
 - Azure (Environment + AKS, Azure Container Registry, Azure Monitor)
