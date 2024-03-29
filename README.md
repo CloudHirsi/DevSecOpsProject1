@@ -118,8 +118,7 @@ pipeline {
 }
 
 ```
-# Security Results:
-## SonarQube:
+## SonarQube Quality Gate:
 ![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/ccc680f5-5606-4d38-ac95-062cc1c5bb3c)
 
 ## Working App and Services:
