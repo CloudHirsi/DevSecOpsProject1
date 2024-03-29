@@ -7,7 +7,7 @@ TOOLS:
 - Trivy (file and image scanning)
 - Docker (Containers/Containerizing)
 - Kubernetes (Container Orchestration)
-- Splunk (Monitoring, Visualization and Data Collection)
+- **Splunk** (Monitoring, Visualization and Data Collection)
 - 
 
 ## Terraform Configuration:
