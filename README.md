@@ -7,7 +7,7 @@ TOOLS:
 - Azure (Environment + AKS, Azure Container Registry, Azure Monitor)
 - Jenkins (Pipeline)
 - SonarQube (SAST Scanning)
-- Trivy (file and image scanning)
+- Trivy (vulnerability and image scanning)
 - Docker (Containers/Containerizing)
 - Kubernetes (Container Orchestration)
 - **Splunk** (Monitoring, Visualization and Data Collection)
