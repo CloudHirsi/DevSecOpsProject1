@@ -10,6 +10,7 @@ TOOLS:
 - Trivy (vulnerability and image scanning)
 - Docker (Containers/Containerizing)
 - Kubernetes (Container Orchestration)
+- Helm Charts (installations and deployment)
 - **Splunk** (Monitoring, Visualization and Data Collection)
 - Email Notifications!
 
@@ -168,6 +169,9 @@ I initiated a DevSecOps Automation project to streamline the development, deploy
 
 *Container Orchestration with Kubernetes:*
 - Orchestrated containerized applications on AKS using Kubernetes, enabling seamless scaling, fault tolerance, and resource management.
+
+*Deployment using Helm Charts:*
+- Installed and deployed Splunk onto my Kubernetes cluster using Helm Charts
 
 *Monitoring and Visualization with Splunk:*
 - Configured Splunk for real-time monitoring, visualization, and log aggregation, enabling proactive monitoring and troubleshooting of application performance and security.
