@@ -1,4 +1,4 @@
-# End To End DevSecOps Project!
+# _DevSecOps Automation + Monitoring for Site Reliability!_
 ![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/2c5b5e51-6a60-48ca-bd4b-353242ef15fd)
 
 
@@ -141,7 +141,50 @@ pipeline {
 ## Terraform Destroy + Cleanup :)
 ![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/0b544e75-bce5-4a42-92a2-ace270f1ae18)
 
+# **Evaluation:**
 
+*Project: DevSecOps Automation + Monitoring for Site Reliability*
+
+## Situation:
+
+I initiated a DevSecOps Automation project to streamline the development, deployment, and security processes for cloud-native applications. The goal was to establish end-to-end automation using modern DevOps tools and practices whilst shifting security left of the CI/CD Pipeline.
+
+## Tasks:
+
+*Infrastructure Provisioning with Terraform:*
+- Independently designed and implemented infrastructure as code using Terraform to create Azure resources, including Azure Container Registry and AKS clusters.
+
+*CI/CD Pipeline Development with Jenkins:*
+- Developed a comprehensive Jenkins Pipeline from scratch, incorporating stages for code analysis, dependency management, image scanning, and deployment to AKS.
+
+*Static Code Analysis with SonarQube:*
+- Integrated SonarQube for static code analysis to identify and address code quality issues and security vulnerabilities in the early stages of development.
+
+*Image Scanning with Trivy:*
+- Implemented Trivy for vulnerability scanning of Docker container images, ensuring that only secure images were deployed to production environments.
+
+*Containerization with Docker:*
+- Single-handedly containerized applications using Docker, simplifying deployment and ensuring consistency across different environments.
+
+*Container Orchestration with Kubernetes:*
+- Orchestrated containerized applications on AKS using Kubernetes, enabling seamless scaling, fault tolerance, and resource management.
+
+*Monitoring and Visualization with Splunk:*
+- Configured Splunk for real-time monitoring, visualization, and log aggregation, enabling proactive monitoring and troubleshooting of application performance and security.
+
+*Email Notifications:*
+- Implemented email notifications in Jenkins to provide instant feedback on pipeline execution status, ensuring timely awareness of build results and issues.
+
+## Results:
+Through my efforts, I successfully:
+
+- Established a fully automated DevSecOps pipeline for cloud-native applications.
+- Enhanced code quality and security through automated code analysis (SAST) and vulnerability scanning.
+- Achieved efficient deployment and management of containerized applications on Docker and Kubernetes.
+- Improved visibility and monitoring capabilities for site reliability.
+
+This project showcases my proficiency in designing, implementing, and managing end-to-end DevSecOps workflows using a variety of tools and techniques.
+Through this experience, i have especially learnt more about container and container orchestration through Docker and Kubernetes, as well as site reliability through monitoring and visualization, allowing me to improve my skillset and knowledge in modern DevOps/SRE principles and security best practices.
 
 
 
