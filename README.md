@@ -127,12 +127,13 @@ pipeline {
 ## Working App and Services:
 ![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/b7ebff40-0ba2-4ccf-8738-de0d97ac94ed)
 
-## Monitoring in AzureMonitor
-![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/242f5e5a-1970-435c-a21f-c32f6c98d1ff)
-![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/767a8970-affd-4598-81b1-8b5b1c30a85a)
+## Monitoring in Azure Monitor:
+![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/8fd91816-47a4-42ce-9f00-0567f24b341a)
 
-## Monitoring sent to **Splunk**
-![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/c7c7fcc5-d55e-4ae6-91bd-8b8f7cef06ca)
+
+## Monitoring using **SPLUNK**
+![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/59fcba2c-5314-4ed6-bd8e-06cc4f27d357)
+![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/ff9d107a-956d-4bd8-979c-8026980ef20c)
 
 ## Success Email Notification: 
 ![image](https://github.com/CloudHirsi/DevSecOpsProject1/assets/153539293/a46a6e16-56a4-4dd9-9089-45e6cd240e23)
