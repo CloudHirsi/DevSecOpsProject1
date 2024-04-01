@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: hamidhirsi/devsecops_project:latest
+        image: $ACRIMAGE
         imagePullPolicy: "Always"
         ports:
         - containerPort: 3000
